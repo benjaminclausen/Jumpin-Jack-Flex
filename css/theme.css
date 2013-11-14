@@ -1,0 +1,129 @@
+.l-hero {
+  background-color: #F46353;
+  color: #fff;
+  padding: 5%;
+  text-align: center;
+  font-size: 200%;
+}
+/*header*/
+.l-header {
+  background: #2D2C31;
+  padding: 15px 20px;
+  overflow: auto;
+}
+/*shorter clearfix http://nicolasgallagher.com/micro-clearfix-hack/*/
+.l-header:before,
+.l-header:after {
+  content: "";
+  display: table;
+}
+.l-header:after {
+  clear: both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.l-header {
+  zoom: 1;
+}
+h1.logo {
+  margin: 0;
+}
+h1.logo a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 22px;
+  float: left;
+  letter-spacing: 0.2em;
+  font-style: normal;
+}
+a.to_nav {
+  float: right;
+  color: #fff;
+  background: #3c3c3c;
+  text-decoration: none;
+  padding: 0 10px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 22px;
+  height: 22px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+a.to_nav:hover,
+a.to_nav:focus {
+  color: #1c1c1c;
+  background: #f46353;
+}
+/*navigation*/#primary_nav ul {
+  list-style: none;
+  background: #2D2C31;
+  padding: 5px 0;
+  margin: 0;
+  font-style: normal;
+}
+#primary_nav li a {
+  display: block;
+  padding: 0 20px;
+  color: #fcfcfc;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 2em;
+  height: 2em;
+  border-bottom: 1px solid #262529;
+}
+#primary_nav li:last-child a {
+  border-bottom: none;
+}
+#primary_nav li a:hover,
+#primary_nav li a:focus {
+  color: #f46353;
+}
+/*media queries*/
+@media only screen and (max-width: 768px) {
+  .l-hero {
+    min-height: 75px;
+  }
+  .l-hero > h1 {
+    font-size: 100%;
+  }
+  #primary_nav li a {
+    line-height: 3em;
+    height: 3em;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 768px) {
+  a.to_nav {
+    display: none;
+  }
+  .l-hero {
+    position: relative;
+  }
+  #primary_nav {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: none;
+  }
+  #primary_nav li {
+    display: inline;
+  }
+  #primary_nav li a {
+    float: left;
+    border: none;
+    padding: 0 10px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+  }
+  #primary_nav li.top {
+    display: none;
+  }
+}

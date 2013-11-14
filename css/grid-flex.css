@@ -1,0 +1,254 @@
+/*flex-grid base*/
+.flex-box {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+}
+.flex-row {
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+}
+.flex-column {
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+}
+.col {
+  flex: 1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  margin: 10px;
+  background-color: #eee;
+  border-radius: 3px;
+  padding: 10px;
+}
+.col-spacer {
+  margin: 10px;
+}
+/*flex-grid columns*/
+.one {
+  flex: 1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  margin: 10px;
+}
+.two {
+  flex: 2;
+  -webkit-flex: 2;
+  -moz-flex: 2;
+  -ms-flex: 2;
+  margin: 10px;
+}
+.three {
+  flex: 3;
+  -webkit-flex: 3;
+  -moz-flex: 3;
+  -ms-flex: 3;
+  margin: 10px;
+}
+.four {
+  flex: 4;
+  -webkit-flex: 4;
+  -moz-flex: 4;
+  -ms-flex: 4;
+  margin: 10px;
+}
+.five {
+  flex: 5;
+  -webkit-flex: 5;
+  -moz-flex: 5;
+  -ms-flex: 5;
+  margin: 10px;
+}
+.six {
+  flex: 6;
+  -webkit-flex: 6;
+  -moz-flex: 6;
+  -ms-flex: 6;
+  margin: 10px;
+}
+.seven {
+  flex: 7;
+  -webkit-flex: 7;
+  -moz-flex: 7;
+  -ms-flex: 7;
+  margin: 10px;
+}
+.eight {
+  flex: 8;
+  -webkit-flex: 8;
+  -moz-flex: 8;
+  -ms-flex: 8;
+  margin: 10px;
+}
+.nine {
+  flex: 9;
+  -webkit-flex: 9;
+  -moz-flex: 9;
+  -ms-flex: 9;
+  margin: 10px;
+}
+.ten {
+  flex: 10;
+  -webkit-flex: 10;
+  -moz-flex: 10;
+  -ms-flex: 10;
+  margin: 10px;
+}
+@media only screen and (max-width: 568px) {
+  .one,
+  .two,
+  .three,
+  .four,
+  .five,
+  .six,
+  .seven,
+  .eight,
+  .nine {
+    flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+  }
+}
+/*flex-grid layout*/
+.module {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.main {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+}
+footer {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+}
+/*my custom layout*/
+.l-main {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.l-top-feature {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.l-sub-feature {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.l-features {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.l-social-media {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.about {
+  flex: 2;
+  -webkit-flex: 2;
+  -moz-flex: 2;
+  -ms-flex: 2;
+  margin: 10px;
+}
+.contact {
+  flex: 8;
+  -webkit-flex: 8;
+  -moz-flex: 8;
+  -ms-flex: 8;
+  margin: 10px;
+}
+/*theme*/
+.content {
+  background-color: #eee;
+  border-radius: 3px;
+  padding: 10px;
+}
+@media only screen and (max-width: 568px) {
+  .module,
+  main,
+  aside,
+  footer,
+  .main,
+  .footer {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+  }
+  .l-main,
+  .l-top-feature,
+  .l-sub-feature,
+  .l-features,
+  .l-social-media {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+  }
+}
+/*@media only screen and (max-width: 568px) {
+.menu {
+	.flex-box;
+	.flex-row;
+}
+
+.menu li {
+	flex: 1;
+	-webkit-flex: 1;
+	-moz-flex: 1;
+	-ms-flex: 1;
+}
+}*/

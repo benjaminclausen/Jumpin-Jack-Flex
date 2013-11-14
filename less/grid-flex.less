@@ -1,0 +1,206 @@
+/*flex-grid base*/
+.flex-box {
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+}
+
+.flex-row {
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+}
+
+.flex-column {
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+}
+
+.col {
+	.one;
+	.content;
+}
+
+.col-spacer {
+	margin:	10px;
+}
+
+/*flex-grid columns*/
+.one {
+	flex: 1;
+	-webkit-flex: 1;
+	-moz-flex: 1;
+	-ms-flex: 1;
+	.col-spacer;
+}
+
+.two {
+	flex: 2;
+	-webkit-flex: 2;
+	-moz-flex: 2;
+	-ms-flex: 2;
+	.col-spacer;
+}
+
+.three {
+	flex: 3;
+	-webkit-flex: 3;
+	-moz-flex: 3;
+	-ms-flex: 3;
+	.col-spacer;
+}
+
+.four {
+	flex: 4;
+	-webkit-flex: 4;
+	-moz-flex: 4;
+	-ms-flex: 4;
+	.col-spacer;
+}
+
+.five {
+	flex: 5;
+	-webkit-flex: 5;
+	-moz-flex: 5;
+	-ms-flex: 5;
+	.col-spacer;
+}
+
+.six {
+	flex: 6;
+	-webkit-flex: 6;
+	-moz-flex: 6;
+	-ms-flex: 6;
+	.col-spacer;
+}
+
+.seven {
+	flex: 7;
+	-webkit-flex: 7;
+	-moz-flex: 7;
+	-ms-flex: 7;
+	.col-spacer;
+}
+
+.eight {
+	flex: 8;
+	-webkit-flex: 8;
+	-moz-flex: 8;
+	-ms-flex: 8;
+	.col-spacer;
+}
+
+.nine {
+	flex: 9;
+	-webkit-flex: 9;
+	-moz-flex: 9;
+	-ms-flex: 9;
+	.col-spacer;
+}
+
+.ten {
+	flex: 10;
+	-webkit-flex: 10;
+	-moz-flex: 10;
+	-ms-flex: 10;
+	.col-spacer;
+}
+
+@media only screen and (max-width: 568px) {
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine {
+	flex: 1;
+	-webkit-flex: 1;
+	-moz-flex: 1;
+	-ms-flex: 1;
+}
+}
+
+/*flex-grid layout*/
+.module {
+	.flex-box;
+	.flex-row;
+		margin-right:	10px;
+		margin-left:	10px;
+}
+
+.main {
+.flex-box;
+.flex-row;
+}
+
+footer {
+	.flex-box;
+	.flex-row;
+}
+
+/*my custom layout*/
+.l-main {
+	.module;
+}
+
+.l-top-feature {
+	.module
+}
+
+.l-sub-feature {
+	.module
+}
+
+.l-features {
+	.module
+}
+
+.l-social-media {
+	.module
+}
+
+.about {
+	.two;
+}
+
+.contact {
+	.eight;
+}
+
+/*theme*/
+.content {
+	background-color:	#eee;
+	border-radius:	3px;
+	padding:	10px;
+}
+
+@media only screen and (max-width: 568px) {
+.module, main, aside, footer, .main, .footer {
+	.flex-box;
+	.flex-column;
+}
+
+.l-main,
+.l-top-feature,
+.l-sub-feature,
+.l-features,
+.l-social-media {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+}
+
+}
+
+/*@media only screen and (max-width: 568px) {
+.menu {
+	.flex-box;
+	.flex-row;
+}
+
+.menu li {
+	flex: 1;
+	-webkit-flex: 1;
+	-moz-flex: 1;
+	-ms-flex: 1;
+}
+}*/
