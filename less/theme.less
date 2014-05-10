@@ -1,9 +1,18 @@
 .l-hero {
 	background-color:	#F46353;
+	background-image: url(../img/gridgrid.png);
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	background-size: 50%;
 	color:	#fff;
 	padding:	5%;
 	text-align:	center;
-	font-size:	200%;
+	font-size:	175%;
+	min-height: 380px;
+	
+	h1 {margin-bottom: 70px;}
+	
+	.btn-outline {border: 1px solid #fff; padding: 4px 8px; border-radius: 3px;}
 }
 
 /*header*/
@@ -102,11 +111,23 @@ a.to_nav:focus {
 	color: rgb(244, 99, 83);
 }
 
+/*footer*/
+footer {
+	
+	a:link, a:visited, a:active {color: #555;}
+	a:hover {color: rgb(244, 99, 83);}
+}
+
 /*media queries*/
 
 @media only screen and (max-width: 768px) {
 	.l-hero {
-		min-height:	75px;
+		min-height:	225px;
+		background-size: 300px;
+		
+		h1 {margin-bottom: 20px;}
+		
+		.btn-outline {font-size: .625em;}
 	}
 	
 	.l-hero > h1 {
