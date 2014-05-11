@@ -1,14 +1,9 @@
 .l-hero {
   background-color: #F46353;
-  background-image: url(../img/gridgrid.png);
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  background-size: 50%;
   color: #fff;
   padding: 5%;
   text-align: center;
   font-size: 175%;
-  min-height: 380px;
 }
 .l-hero h1 {
   margin-bottom: 70px;
@@ -17,6 +12,13 @@
   border: 1px solid #fff;
   padding: 4px 8px;
   border-radius: 3px;
+}
+.l-hero .hero-img {
+  background-image: url(../img/hero-square.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 280px;
 }
 /*header*/
 .l-header {
@@ -111,7 +113,6 @@ footer a:hover {
 /*media queries*/
 @media only screen and (max-width: 768px) {
   .l-hero {
-    min-height: 225px;
     background-size: 300px;
   }
   .l-hero h1 {
