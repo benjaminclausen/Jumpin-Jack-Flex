@@ -1,179 +1,189 @@
 /*flex-grid base*/
-.flex-box {
+@mixin flex-box {
 	display: flex;
 	display: -webkit-flex;
 	display: -moz-flex;
 }
 
-.flex-row {
+@mixin flex-row {
 	flex-direction: row;
 	-webkit-flex-direction: row;
 	-moz-flex-direction: row;
 }
 
-.flex-column {
+@mixin flex-column {
 	flex-direction: column;
 	-webkit-flex-direction: column;
 	-moz-flex-direction: column;
 }
 
-.col {
-	.one;
-	.content;
-}
-
-.col-spacer {
-	margin:	10px;
+@mixin col-spacer {
+	margin: $default-margin/2;
 }
 
 /*flex-grid columns*/
-.one {
+@mixin one {
 	flex: 1;
 	-webkit-flex: 1;
 	-moz-flex: 1;
 	-ms-flex: 1;
-	.col-spacer;
+	@include col-spacer;
 }
 
-.two {
+@mixin two {
 	flex: 2;
 	-webkit-flex: 2;
 	-moz-flex: 2;
 	-ms-flex: 2;
-	.col-spacer;
+	@include col-spacer;
 }
 
-.three {
+@mixin three {
 	flex: 3;
 	-webkit-flex: 3;
 	-moz-flex: 3;
 	-ms-flex: 3;
-	.col-spacer;
+	@include col-spacer;
 }
 
-.four {
+@mixin four {
 	flex: 4;
 	-webkit-flex: 4;
 	-moz-flex: 4;
 	-ms-flex: 4;
-	.col-spacer;
+	@include col-spacer;
 }
 
-.five {
+@mixin five {
 	flex: 5;
 	-webkit-flex: 5;
 	-moz-flex: 5;
 	-ms-flex: 5;
-	.col-spacer;
+	@include col-spacer;
 }
 
-.six {
+@mixin six {
 	flex: 6;
 	-webkit-flex: 6;
 	-moz-flex: 6;
 	-ms-flex: 6;
-	.col-spacer;
+	@include col-spacer;
 }
 
-.seven {
+@mixin seven {
 	flex: 7;
 	-webkit-flex: 7;
 	-moz-flex: 7;
 	-ms-flex: 7;
-	.col-spacer;
+	@include col-spacer;
 }
 
-.eight {
+@mixin eight {
 	flex: 8;
 	-webkit-flex: 8;
 	-moz-flex: 8;
 	-ms-flex: 8;
-	.col-spacer;
+	@include col-spacer;
 }
 
-.nine {
+@mixin nine {
 	flex: 9;
 	-webkit-flex: 9;
 	-moz-flex: 9;
 	-ms-flex: 9;
-	.col-spacer;
+	@include col-spacer;
 }
 
-.ten {
+@mixin ten {
 	flex: 10;
 	-webkit-flex: 10;
 	-moz-flex: 10;
 	-ms-flex: 10;
-	.col-spacer;
+	@include col-spacer;
 }
 
 @media only screen and (max-width: 568px) {
-.one, .two, .three, .four, .five, .six, .seven, .eight, .nine {
+@mixin one {@include default-flex;}
+@mixin two {@include default-flex;}
+@mixin three{@include default-flex;}
+@mixin four {@include default-flex;}
+@mixin five {@include default-flex;}
+@mixin six {@include default-flex;}
+@mixin seven {@include default-flex;}
+@mixin eight {@include default-flex;}
+@mixin nine {@include default-flex;}
+}
+
+.col {
+	@include one;
+	@extend %content;
+}
+
+@mixin default-flex {
 	flex: 1;
 	-webkit-flex: 1;
 	-moz-flex: 1;
 	-ms-flex: 1;
 }
-}
 
 /*flex-grid layout*/
-.module {
-	.flex-box;
-	.flex-row;
-		margin-right:	10px;
-		margin-left:	10px;
+@mixin module {
+	@include flex-box;
+	@include flex-row;
+	margin-right: $default-margin/2;
+	margin-left: $default-margin/2;
 }
 
 .main {
-.flex-box;
-.flex-row;
+@include flex-box;
+@include flex-row;
 }
 
 footer {
-	.flex-box;
-	.flex-row;
+	@include flex-box;
+	@include flex-row;
 }
 
 /*my custom layout*/
 .l-main {
-	.module;
+	@include module;
 }
 
 .l-top-feature {
-	.module
+	@include module
 }
 
 .l-sub-feature {
-	.module
+	@include module
 }
 
 .l-features {
-	.module
+	@include module
 }
 
 .l-social-media {
-	.module
+	@include module
 }
 
 .about {
-	.two;
+	@include two;
 }
 
 .contact {
-	.eight;
+	@include eight;
 }
 
 /*theme*/
-.content {
-	background-color:	#eee;
-	border-radius:	3px;
-	padding:	10px;
+%content {
+	background-color: #eee;
+	border-radius: 3px;
+	padding: $default-padding;
 }
 
 @media only screen and (max-width: 640px) {
 .module, main, aside, footer, .main, .footer {
-	.flex-box;
-	.flex-column;
+	@include flex-box;
+	@include flex-column;
 }
 
 .l-main,
@@ -188,5 +198,4 @@ footer {
   -webkit-flex-direction: column;
   -moz-flex-direction: column;
 }
-
 }

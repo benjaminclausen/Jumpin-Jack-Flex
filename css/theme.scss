@@ -1,12 +1,13 @@
 .l-hero {
-	background-color:	#F46353;
-	color:	#fff;
-	padding:	5%;
+    background-color: $default-color;
+	color: #fff;
+	padding: 5%;
 	text-align:	center;
-	font-size:	175%;
-	
+	font-size: 175%;
+	margin-bottom: $default-margin/2;
+
 	h1 {margin-bottom: 70px;}
-	
+
 	.btn-outline {border: 1px solid #fff; padding: 4px 8px; border-radius: 3px;}
 
 	.hero-img {
@@ -32,11 +33,11 @@
 		content:"";
 		display:table;
 		}
-		
+
 		.l-header:after {
 		    clear:both;
 		}
-		
+
 		/* For IE 6/7 (trigger hasLayout) */
 		.l-header {
 		    zoom:1;
@@ -81,7 +82,7 @@ a.to_nav:focus {
 	background: rgb(244, 99, 83);
 }
 
-/*navigation*/	
+/*navigation*/
 
 #primary_nav ul {
 	list-style: none;
@@ -116,7 +117,7 @@ a.to_nav:focus {
 
 /*footer*/
 footer {
-	
+
 	a:link, a:visited, a:active {color: #555;}
 	a:hover {color: rgb(244, 99, 83);}
 }
@@ -125,49 +126,49 @@ footer {
 
 @media only screen and (max-width: 768px) {
 	.l-hero {
-		
+
 		background-size: 300px;
-		
+
 		h1 {margin-bottom: 20px;}
-		
+
 		.btn-outline {font-size: .625em;}
-		
+
 		.hero-img {}
 	}
-	
+
 	.l-hero > h1 {
 		font-size:	100%;
 	}
-	
+
 	#primary_nav li a {
 		line-height: 3em;
 		height: 3em;
 		text-align:	center;
 	}
-	
+
 }
 
 @media only screen and (min-width: 40em) {
-		
+
 			a.to_nav {
 				display: none;
 			}
-			
+
 			.l-hero {
 				position: relative;
 			}
-			
+
 			#primary_nav {
 				position: absolute;
 				top: 5px;
 				right: 10px;
 				background: none;
 			}
-			
+
 			#primary_nav li {
 				display: inline;
 			}
-			
+
 			#primary_nav li a {
 				float: left;
 				border: none;
@@ -176,9 +177,9 @@ footer {
 				-moz-border-radius: 2px;
 				border-radius: 2px;
 			}
-			
+
 			#primary_nav li.top {
 				display: none;
 			}
-	
+
 		}
